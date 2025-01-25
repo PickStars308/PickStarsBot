@@ -9,9 +9,9 @@ Welcome to PickStarsBot! This intelligent QQ bot built on NoneBot2 offers a rich
 
 ## PlugIns
 - [x] Yiyan
-- [x] Today in History
+- [ ] Today in History
 - [x] 60s Morning Post
-- [ ] BotMenu
+- [x] BotMenu
 
 ## Preview
 ![PickStarsBot](https://img.picui.cn/free/2025/01/26/679524c779630.jpg)
@@ -44,11 +44,11 @@ Detailed information on how to use plug-ins can be found in the README.md files 
 
 See [Docs](https://nonebot.dev/)
 
-## 支持与贡献
+## Support and Contribution
 If you think it's easy to use, you can give this project a Star
 
 If you have comments or suggestions, you are welcome to submit them [Issues](https://github.com/PickStars308/PickStarsBot/issues) 和 [Pull requests](https://github.com/PickStars308/PickStarsBot/pulls)。
 
 ## License
-THIS PROJECT USES [MIT](LICENSE) AS AN OPEN SOURCE LICENSE.
+This project is used [MIT](LICENSE) as an open source license.
 

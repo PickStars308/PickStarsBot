@@ -9,9 +9,9 @@ Chinese | [English](README.md)
 
 ## 插件
 - [x] 一言
-- [x] 历史上的今天
+- [ ] 历史上的今天
 - [x] 60秒早报
-- [ ] 机器人菜单
+- [x] 机器人菜单
 
 ## 预览
 ![PickStarsBot](https://img.picui.cn/free/2025/01/26/679524c779630.jpg)
