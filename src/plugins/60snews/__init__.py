@@ -54,4 +54,6 @@ async def _(bot: Bot, event: Event, state: T_State):
             pass
     else:
         await News.finish(f"本群({GroupID})\n"
-                          f"未授权使用本插件，请联系管理员", reply_message=True)
+                          f"未授权使用本插件，请联系管理员\n"
+                          f"发送以下激活命令：\n"
+                          f"@[Bot] /启用Robot", reply_message=True)

@@ -14,7 +14,7 @@ Chinese | [English](README.md)
 - [ ] 机器人菜单
 
 ## 预览
-正在准备中...
+![PickStarsBot](https://img.picui.cn/free/2025/01/26/679524c779630.jpg)
 
 ## 如何启动
 
