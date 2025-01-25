@@ -2,6 +2,8 @@
 
 # PickStarsBot - 摘星辰Bot
 
+Chinese | [English](README.md)
+
 ## 描述
 欢迎使用PickStarsBot！这是一款基于NoneBot2构建的智能QQ机器人，提供丰富的功能，包括一言、历史上的今天、60秒早报等，快来试试吧！
 

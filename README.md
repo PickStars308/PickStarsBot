@@ -2,6 +2,8 @@
 
 # PickStarsBot - 摘星辰Bot
 
+[Chinese](README_Zh.md) | English
+
 ## Description
 Welcome to PickStarsBot! This intelligent QQ bot built on NoneBot2 offers a rich set of features, including Yiyan, Today in History, and 60s Morning Post..., try it now!
 
