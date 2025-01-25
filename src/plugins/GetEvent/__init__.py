@@ -34,7 +34,7 @@ async def _(bot: Bot, event: MessageEvent):
         response = requests.get('http://api.suxun.site/api/yiyan')
         data = response.json()
         # 提取需要的数据
-        qinghua = data['hitokoto']
+        qinghua = data['Hitokoto']
         # 将数据存入字典
         data = {
             'Hitokoto': f'Hitokoto：{qinghua}',

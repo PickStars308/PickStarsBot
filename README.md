@@ -9,9 +9,9 @@ Welcome to PickStarsBot! This intelligent QQ bot built on NoneBot2 offers a rich
 
 ## PlugIns
 - [x] Yiyan
-- [x] Today in History
+- [ ] Today in History
 - [x] 60s Morning Post
-- [ ] BotMenu
+- [x] BotMenu
 
 ## Preview
 ![PickStarsBot](https://img.picui.cn/free/2025/01/26/679524c779630.jpg)
