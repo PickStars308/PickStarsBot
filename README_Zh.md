@@ -18,10 +18,23 @@ Chinese | [English](README.md)
 
 ## 如何启动
 
-1. 使用 `nb create` 生成项目。
-2. 使用 `nb plugin create` 创建插件。
-3. 在 `src/plugins` 文件夹下编写插件。
-4. 使用 `nb run --reload` 启动机器人。
+1. 克隆此存储库
+```bash
+git clone https://github.com/PickStars308/PickStarsBot.git
+```
+```bash
+cd PickStarsBot
+```
+
+2. 安装依赖项
+```bash
+pip install -r requirements.txt
+```
+
+3. 启动
+```bash
+nb run --reload
+```
 
 ## 如何使用插件
 详细的插件使用说明请查看每个插件目录中的 README.md 文件。
