@@ -84,9 +84,19 @@ async def _(matcher: Matcher, page: int):
         await matcher.finish(f"                     ⭐错误⭐                 "
                              f"\n\n{menu_items}\n\n"
                              f"                 当前页：{page} / {len(menu_config)}"
-                             f"\n\n请发送“菜单 [页码]”查看其他页面")
+                             f"\n\n请发送“/菜单 [页码]”查看其他页面"
+                             f"\n试试：@我 /[功能名称]"
+                             f"\n例如：@我 /60s早报"
+                             f"\n"
+                             f"\n                      注意"
+                             f"\n\n所有的功能都要 @[Bot] 才能触发")
 
     await matcher.finish(f"                 ⭐星辰菜单⭐                 "
                          f"\n\n{menu_items}\n\n"
                          f"                 当前页：{page} / {len(menu_config)}"
-                         f"\n\n请发送“菜单 [页码]”查看其他页面")
+                         f"\n\n请发送“/菜单 [页码]”查看其他页面"
+                             f"\n试试：@我 /[功能名称]"
+                             f"\n例如：@我 /60s早报"
+                             f"\n"
+                             f"\n                       注意"
+                             f"\n\n所有的功能都要 @[Bot] 才能触发")
