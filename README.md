@@ -38,7 +38,7 @@ nb run --reload
 
 
 ## How to use plugin
-Detailed information on how to use plug-ins can be found in the README.md files in each plug-in directory
+You can see how to use it in each plugin code
 
 ## Documentation
 
