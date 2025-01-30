@@ -4,51 +4,37 @@ from nonebot.adapters.onebot.v11 import Event
 from nonebot.plugin import PluginMetadata
 from nonebot.rule import to_me
 
-from Utils.ControlTool import ControlTool
 from .config import Config
 
 __plugin_meta__ = PluginMetadata(
     name="Hitokoto",
-    description="",
-    usage="",
+    description="返回随机一条名人名言。",
+    usage=(
+        "命令：\n"
+        "  - @[Bot] /一言\n"
+        "示例：\n"
+        "  - @[Bot] /名人名言\n"
+        "  - @[Bot] /Word\n"
+        "功能：\n"
+        "  - 返回随机一条名人名言\n"
+    ),
     config=Config,
 )
 
 config = get_plugin_config(Config)
 
 
-Hitokoto = on_command("一言", rule=to_me(), aliases={"hitokoto", "Hitokoto"}, priority=1, block=True)
+Hitokoto = on_command("一言", rule=to_me(), aliases={"名人名言", "Word"}, priority=1, block=True)
 
 @Hitokoto.handle()
 async def _(event: Event):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7'
-    }
-    params = {
-        'type': 'json'
-    }
-
-    control_tool = ControlTool()
-    GroupID = control_tool.extract_group_id(event.get_session_id())
-
-    if control_tool.is_authorized(GroupID):
-        try:
-            response = requests.get('https://yyapi.xpdbk.com/api/ian', headers=headers, params=params)
-            response.raise_for_status()
-            data = response.json()
-            text = data["text"]
-            author = data["author"]
-            await Hitokoto.finish(f'{text}\n\n             —————— {author}')
-        except requests.exceptions.RequestException as e:
-            print(f"错误获取数据：{e}")
-            await Hitokoto.finish('错误获取数据：' + str(e))
-
-    else:
-        await Hitokoto.finish(f"本群({GroupID})\n"
-                          f"未授权使用本插件，请联系管理员\n"
-                          f"发送以下激活命令：\n"
-                          f"@[Bot] /启用Robot", reply_message=True)
+    try:
+        response = requests.get('https://xiaoapi.cn/API/yiyan.php')
+        response = response.text
+        await Hitokoto.finish(f'{response}')
+    except requests.exceptions.RequestException as e:
+        print(f"错误获取数据：{e}")
+        await Hitokoto.finish('错误获取数据：' + str(e))
 
     # url = 'https://v1.hitokoto.cn'
     #

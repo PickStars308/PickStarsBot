@@ -9,9 +9,12 @@ from nonebot.rule import to_me
 from .config import Config
 
 __plugin_meta__ = PluginMetadata(
-    name="AtEvent",
-    description="",
-    usage="",
+    name="GetEvent",
+    description="接收特定的消息事件",
+    usage=(
+        "@[Bot]：Bot会回复消息内容。\n"
+        "戳一戳[Bot]：Bot会回复戳一戳事件。"
+    ),
     config=Config,
 )
 

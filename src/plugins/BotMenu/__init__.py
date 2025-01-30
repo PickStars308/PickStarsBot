@@ -12,8 +12,16 @@ from .config import Config
 
 __plugin_meta__ = PluginMetadata(
     name="BotMenu",
-    description="",
-    usage="",
+    description="返回机器人支持的功能菜单",
+    usage=(
+        "命令：\n"
+        "  - @[Bot] /菜单\n"
+        "示例：\n"
+        "  - @[Bot] /菜单\n"
+        "  - @[Bot] /菜单 [页码]\n"
+        "功能：\n"
+        "  - 返回机器人支持的功能菜单\n"
+    ),
     config=Config,
 )
 

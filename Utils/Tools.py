@@ -20,3 +20,21 @@ class Tools:
             # Handle any exceptions (e.g., network issues, invalid URL)
             print(f"Error fetching the URL: {e}")
             return None
+
+
+    """
+    文本转语音
+    参数：str
+    """
+    @staticmethod
+    def text_to_speech(string: str):
+        url = f"https://xiaoapi.cn/API/zs_tts.php?type=xunfei&msg={string}&id=3"
+        response = requests.post(url)
+        if response.status_code == 200:
+            data = response.json()
+            if data["code"] == 200:
+                return data["tts"]
+            else:
+                return None
+        else:
+            return None
