@@ -8,10 +8,13 @@ Chinese | [English](README.md)
 欢迎使用PickStarsBot！这是一款基于NoneBot2构建的智能QQ机器人，提供丰富的功能，包括一言、历史上的今天、60秒早报等，快来试试吧！
 
 ## 插件
-- [x] 一言
-- [ ] 历史上的今天
-- [x] 60秒早报
-- [x] 机器人菜单
+- [x] [机器人菜单](src/plugins/BotMenu)
+- [x] [一言](src/plugins/Hitokoto)
+- [ ] Today in History
+- [x] [60s早报](src/plugins/60sNews)
+- [X] [Bing每日壁纸](src/plugins/BingWallpapers)
+- [X] [每日英语](src/plugins/EnglishDaily)
+- [X] [天气](src/plugins/Weather)
 
 ## 预览
 ![PickStarsBot](https://img.picui.cn/free/2025/01/26/679524c779630.jpg)

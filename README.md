@@ -8,10 +8,13 @@
 Welcome to PickStarsBot! This intelligent QQ bot built on NoneBot2 offers a rich set of features, including Yiyan, Today in History, and 60s Morning Post..., try it now!
 
 ## PlugIns
-- [x] Yiyan
+- [x] [BotMenu](src/plugins/BotMenu)
+- [x] [Hitokoto](src/plugins/Hitokoto)
 - [ ] Today in History
-- [x] 60s Morning Post
-- [x] BotMenu
+- [x] [60sNews](src/plugins/60sNews)
+- [X] [BingWallpapers](src/plugins/BingWallpapers)
+- [X] [EnglishDaily](src/plugins/EnglishDaily)
+- [X] [Weather](src/plugins/Weather)
 
 ## Preview
 ![PickStarsBot](https://img.picui.cn/free/2025/01/26/679524c779630.jpg)
